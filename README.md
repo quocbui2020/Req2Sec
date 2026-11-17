@@ -15,7 +15,8 @@ This repository provides the datasets, Python scripts, and instructions needed t
 ├── original_sources/
 │   └── [individual baseline and ensemble model scripts]
 └── data/
-    └── label_powerset_filtered_for_smote_with_updated_data.xlsx
+    ├── label_powerset_filtered_for_smote_with_updated_data.xlsx
+    └── requirement_to_vulnerability_mapping.xlsx
 ```
 
 The processed dataset (`processed_data_all.pkl`, approximately 200 MB) is hosted separately on Zenodo to keep the source code repository lightweight. Download the dataset from [10.5281/zenodo.24267927](https://zenodo.org/records/24267928) and place the file in the `data/` directory before running the experiments.
@@ -24,6 +25,7 @@ The processed dataset (`processed_data_all.pkl`, approximately 200 MB) is hosted
 
 - **`data/processed_data_all.pkl`**: The processed dataset used for the machine learning experiments. It contains resampled training features and labels, held-out test features and labels, and fitted TF-IDF vectorizers for both input configurations. The feature matrices and targets are ready for model training and evaluation; the upstream data collection and preprocessing stages do not need to be rerun.
 - **`data/label_powerset_filtered_for_smote_with_updated_data.xlsx`**: Maps Label Powerset class IDs to their corresponding CWE label sets, used to interpret model predictions.
+- **`data/requirement_to_vulnerability_mapping.xlsx`**: The Original Requirement to Vulnerability Mapping where each requirement is associated with one or more vulnerability (CVE's).
 
 ### Code
 
