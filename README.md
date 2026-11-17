@@ -19,7 +19,7 @@ This repository provides the datasets, Python scripts, and instructions needed t
     └── label_powerset_filtered_for_smote_with_updated_data.xlsx
 ```
 
-The large `processed_data_all.pkl` file is provided separately. Download it from **[INSERT DATASET DOWNLOAD LINK]** and place it inside `data/` before running the experiments.
+The processed dataset (`processed_data_all.pkl`, approximately 200 MB) is hosted separately on Zenodo to keep the source code repository lightweight. Download the dataset from [10.5281/zenodo.24267927](https://zenodo.org/records/24267928) and place the file in the `data/` directory before running the experiments.
 
 ### Dataset files
 
